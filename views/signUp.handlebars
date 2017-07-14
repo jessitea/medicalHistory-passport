@@ -1,0 +1,59 @@
+ <header>
+      <nav class="navbar navbar-toggleable-md navbar-light bg-faded" id="navbar"><img src="https://p5.zdassets.com/hc/theme_assets/187734/200050403/knowledge.png" height=75px alt="diary" id="navbarImage">
+        <a class="navbar-brand" id="navbarHeader">My Medical Diary</a>
+      </nav>
+    </header>
+
+  <div class="container" id="mainContainer">
+
+    <!-- Main Row -->
+    <div class="row">
+    
+      <!-- Welcome Info Column -->
+      <div class="col-md-6">
+        <div class="welcomeDiv">
+          <h1 class="welcome">Welcome!</h1>
+          <br>
+          <h3 class="welcomeInfo">
+            <p>Welcome to My Medical Diary, the application that allows you to log everything you need in order to live a happy and healthy life. 
+            </p><p>
+            Sign up today and instantly have the ability to track all of your medical incidents and appointment notes as well as make helpful to do lists and store the contact information of all of your doctors with ease!
+            </p>
+          </h3>
+        </div>
+      </div>      
+
+      <!-- Sign Up Column -->
+      <div class="col-md-6">
+      	<form class="signup" action="/users" method="POST">
+      	<h1 class="signUpTitle">Sign Up</h1>
+      	<div class="form-group">
+          <label for="inputName" class="signUpLabel">Name</label>
+          <input type="text" class="form-control placeholder" id="inputName" name="name" placeholder="Name">
+        </div>
+        <div class="form-group">
+          <label for="inputEmail" class="signUpLabel">Email address</label>
+          <input type="email" class="form-control placeholder" id="inputEmail" name="email" placeholder="Email">
+        </div>
+        <div class="form-group">
+          <label for="inputPassword" class="signUpLabel">Password</label>
+          <input type="password" class="form-control placeholder" id="inputPassword" name="password" placeholder="Password">
+        </div>
+
+        <div class="form-group">
+          <button type="submit" class="btn btn-secondary float-right regButton" id="signUpButton">Sign Up</button>
+        </div>
+        <br><br>
+      
+        <span class="memberQuestion">Already a member? <a href="/users/login">Login Here</a>
+        </span>
+        </form>
+      </div>
+    </div>
+  </div>
+
+<footer class="footer">
+  <div class="container">
+  <span class="text-muted">&copy; Nikki Jedic, Emily Polansky, Michael Russo, Jessica Ticzon</span>
+  </div>
+</footer>
